@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Trash is a leaf pile in the animal age, a box in the neolithic age, a bag in the medieval age,
+     and Vanilla Recycling Expanded's own trash from the industrial age on. -->
+<Defs>
+
+	<ThingStyleDef>
+		<defName>PW_Trash_Leaf</defName>
+		<graphicData>
+			<texPath>Things/Item/Resource/PW_TrashLeaf</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>PW_Trash_Box</defName>
+		<graphicData>
+			<texPath>Things/Item/Resource/PW_TrashBox</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>PW_Trash_Bag</defName>
+		<graphicData>
+			<texPath>Things/Item/Resource/PW_TrashBag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<VisualProgression.ItemLooksDef>
+		<defName>PW_Trash</defName>
+		<item>VRecyclingE_Trash</item>
+		<looks>
+			<li><upToAge>Animal</upToAge><style>PW_Trash_Leaf</style></li>
+			<li><upToAge>Neolithic</upToAge><style>PW_Trash_Box</style></li>
+			<li><upToAge>Medieval</upToAge><style>PW_Trash_Bag</style></li>
+		</looks>
+	</VisualProgression.ItemLooksDef>
+
+</Defs>

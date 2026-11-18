@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AdaptiveStorageBase">
+        <defName>FernyDumpster</defName>
+		<label>dumpster</label>
+		<graphicData>
+			<texPath>Things/Other/BinLarge/BinLarge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+      		<drawSize>(2.5,1.5)</drawSize>
+			<drawRotated>true</drawRotated>
+			<color>(255,255,255)</color>
+		</graphicData>
+    	<defaultPlacingRot>South</defaultPlacingRot>
+		<description>A large sealed container with a hinged lid, perfect for storing trash. \n\n&lt;color=#E5E54C&gt;Storage stats:&lt;/color&gt; 
+Stack size total: 24
+Stack per tile: 12
+
+Allowed items: Trash</description>
+		<fillPercent>0.80</fillPercent>
+		<uiIconScale>0.7</uiIconScale>
+    	<size>(2,1)</size>
+        <rotatable>true</rotatable>
+        <researchPrerequisites>
+            <li>PW_Dumpsters</li>
+        </researchPrerequisites>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>300</WorkToBuild>
+			<Beauty>0</Beauty>
+			<Mass>1</Mass>
+            <Flammability>1</Flammability>
+		</statBases>
+        <stuffCategories>
+			<li>Metallic</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>90</costStuffCount>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+			<maxItemsInCell>12</maxItemsInCell>
+			<fixedStorageSettings>
+				<filter>
+					<thingDefs>  
+						<li>VRecyclingE_Trash</li>					
+					</thingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<paintable>true</paintable>
+		</building>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

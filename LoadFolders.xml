@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+	<v1.7>
+		<li>/</li>
+		<li>1.7</li>
+		<li IfModActive="OskarPotocki.VanillaVehiclesExpanded">Modules/Garbage Truck</li>
+		<li IfModActiveAll="VanillaExpanded.VFECore,adaptive.storage.framework">Modules/Adaptive Trash Storage</li>
+	</v1.7>
+</loadFolders>

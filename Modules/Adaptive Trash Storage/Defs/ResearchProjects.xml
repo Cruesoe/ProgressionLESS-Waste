@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>PW_Dumpsters</defName>
+		<label>dumpsters</label>
+		<description>Learn to build dumpsters, large sealed containers that store a lot of trash.</description>
+		<tab>VanillaExpanded</tab>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>MF_WasteDisposal</li>
+		</prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>1.25</researchViewY>
+	</ResearchProjectDef>
+</Defs>
