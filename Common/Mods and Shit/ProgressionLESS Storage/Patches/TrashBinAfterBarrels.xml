@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ProgressionLESS: Storage folds the barrels project into Crates and chests: trash bins come after it -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]</xpath>
+    <value>
+      <prerequisites>
+        <li>Ferny_Boxes</li>
+      </prerequisites>
+    </value>
+  </Operation>
+</Patch>

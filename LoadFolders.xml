@@ -6,6 +6,7 @@
     <li>1.7</li>
     <li IfModActive="OskarPotocki.VanillaVehiclesExpanded">Common/Mods and Shit/Garbage Truck</li>
     <li IfModActive="OskarPotocki.VanillaVehiclesExpanded">1.7/Mods and Shit/Garbage Truck</li>
+    <li IfModActive="dankpyon.medieval.overhaul,reel.expanded.storage" IfModActiveAll="VanillaExpanded.VFECore,adaptive.storage.framework,cruesoe.progressionlessstorage">Common/Mods and Shit/ProgressionLESS Storage</li>
     <li IfModActiveAll="VanillaExpanded.VFECore,adaptive.storage.framework">Common/Mods and Shit/Adaptive Trash Storage</li>
   </v1.7>
 </loadFolders>
