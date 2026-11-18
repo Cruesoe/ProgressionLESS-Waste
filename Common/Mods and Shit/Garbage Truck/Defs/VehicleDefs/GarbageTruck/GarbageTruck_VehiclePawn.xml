@@ -25,7 +25,6 @@
 		
 		<size>(3,6)</size> <!-- hitbox size -->
 		
-		<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
 		<vehicleCategory>Transport</vehicleCategory>
 		<techLevel>Industrial</techLevel>
 		<vehicleType>Land</vehicleType>
@@ -99,6 +98,11 @@
 		<components>
 			<li>
 				<key>Engine</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Engine</label>
 				<health>60</health>
 				<priorityStatEfficiency>true</priorityStatEfficiency>
@@ -280,6 +284,11 @@
 			</li>
 			<li>
 				<key>FrontLeftSuspension</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Front Left Suspension</label>
 				<health>30</health>
 				<depth>Internal</depth>
@@ -296,6 +305,11 @@
 			</li>
 			<li>
 				<key>FrontRightSuspension</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Front Right Suspension</label>
 				<health>30</health>
 				<depth>Internal</depth>
@@ -312,6 +326,11 @@
 			</li>
 			<li>
 				<key>MiddleLeftSuspension</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Middle Left Suspension</label>
 				<health>30</health>
 				<depth>Internal</depth>
@@ -328,6 +347,11 @@
 			</li>
 			<li>
 				<key>MiddleRightSuspension</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Middle Right Suspension</label>
 				<health>30</health>
 				<depth>Internal</depth>
@@ -344,6 +368,11 @@
 			</li>
 			<li>
 				<key>BackLeftSuspension</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Back Left Suspension</label>
 				<health>30</health>
 				<depth>Internal</depth>
@@ -360,6 +389,11 @@
 			</li>
 			<li>
 				<key>BackRightSuspension</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Back Right Suspension</label>
 				<health>30</health>
 				<depth>Internal</depth>
@@ -376,6 +410,11 @@
 			</li>
 			<li>
 				<key>Gearbox</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Gearbox</label>
 				<health>45</health>
 				<depth>Internal</depth>
@@ -392,6 +431,11 @@
 			</li>
 			<li>
 				<key>LeftSidePanel</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Left Side Panel</label>
 				<health>25</health>
 				<depth>External</depth>
@@ -402,6 +446,11 @@
 			</li>
 			<li>
 				<key>RightSidePanel</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Right Side Panel</label>
 				<health>25</health>
 				<depth>External</depth>
@@ -412,6 +461,11 @@
 			</li>
 			<li>
 				<key>Chemtank</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Chemtank</label>
 				<health>45</health>
 				<depth>Internal</depth>
@@ -435,6 +489,11 @@
 			</li>
 			<li>
 				<key>FrontBumper</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Front Bumper</label>
 				<health>30</health>
 				<depth>External</depth>
@@ -445,6 +504,11 @@
 			</li>
 			<li>
 				<key>RearBumper</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Rear Bumper</label>
 				<health>20</health>
 				<depth>External</depth>
@@ -455,6 +519,11 @@
 			</li>
 			<li>
 				<key>Upholstery</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Upholstery</label>
 				<health>25</health>
 				<depth>Internal</depth>
@@ -462,6 +531,11 @@
 			</li>
 			<li>
 				<key>Dashboard</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Dashboard</label>
 				<health>30</health>
 				<depth>Internal</depth>
@@ -469,6 +543,11 @@
 			</li>
 			<li>
 				<key>SteeringWheel</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Steering Wheel</label>
 				<health>20</health>
 				<depth>Internal</depth>
@@ -476,6 +555,11 @@
 			</li>
 			<li>
 				<key>Alternator</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Alternator</label>
 				<health>20</health>
 				<depth>Internal</depth>
@@ -483,6 +567,11 @@
 			</li>
 			<li>
 				<key>Hood</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Hood</label>
 				<health>30</health>
 				<depth>External</depth>
@@ -490,6 +579,11 @@
 			</li>
 			<li>
 				<key>Roof</key>
+				<armor>
+					<ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.38</ArmorRating_Sharp>
+					<ArmorRating_Heat>1.0</ArmorRating_Heat>
+				</armor>
 				<label>Roof</label>
 				<health>30</health>
 				<depth>External</depth>
