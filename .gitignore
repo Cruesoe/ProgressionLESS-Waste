@@ -1,4 +1,13 @@
-obj/
-bin/
-.vs/
+**/bin/
+**/obj/
+**/.vs/
+*.user
+*.pdb
+*.slnx
 .DS_Store
+Assets.zip
+Assets.zip.*
+Directory.Build.props
+Directory.Build.targets
+AGENTS.md
+CLAUDE.md

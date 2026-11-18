@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 1.7 only: Visual Progression Framework, a required mod, has no 1.6 version -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>ProgressionWaste</RootNamespace>
+    <AssemblyName>ProgressionWaste</AssemblyName>
+    <UseHarmony>false</UseHarmony>
+    <PickUpAndHaulDll Condition="'$(PickUpAndHaulDll)' == ''">$(PICKUPANDHAUL_DLL)</PickUpAndHaulDll>
+    <PickUpAndHaulDll Condition="'$(PickUpAndHaulDll)' == ''">C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\1279012058\1.6\Assemblies\PickUpAndHaul.dll</PickUpAndHaulDll>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PickUpAndHaul">
+      <HintPath>$(PickUpAndHaulDll)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="VerifyPickUpAndHaul" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(PickUpAndHaulDll)')" Text="PickUpAndHaul.dll not found at '$(PickUpAndHaulDll)'. Set PICKUPANDHAUL_DLL or subscribe to Pick Up And Haul." />
+  </Target>
+</Project>

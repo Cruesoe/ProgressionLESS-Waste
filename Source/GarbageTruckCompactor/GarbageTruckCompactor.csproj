@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- 1.7 only, like the main assembly; loads with Vanilla Vehicles Expanded -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>GarbageTruckCompactor</RootNamespace>
+    <AssemblyName>GarbageTruckCompactor</AssemblyName>
+    <UseHarmony>false</UseHarmony>
+    <ModAssemblies>$(ModRepoRoot)$(RimWorldGameVersion)\Mods and Shit\Garbage Truck\Assemblies\</ModAssemblies>
+    <VehicleFrameworkAssemblies Condition="'$(VehicleFrameworkAssemblies)' == ''">$(VEHICLEFRAMEWORK_ASSEMBLIES)</VehicleFrameworkAssemblies>
+    <VehicleFrameworkAssemblies Condition="'$(VehicleFrameworkAssemblies)' == ''">C:\Program Files (x86)\Steam\steamapps\workshop\content\294100\3014915404\1.7\Assemblies</VehicleFrameworkAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Vehicles">
+      <HintPath>$(VehicleFrameworkAssemblies)\Vehicles.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="SmashTools">
+      <HintPath>$(VehicleFrameworkAssemblies)\SmashTools.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <Target Name="VerifyVehicleFramework" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(VehicleFrameworkAssemblies)\Vehicles.dll')" Text="Vehicles.dll not found in '$(VehicleFrameworkAssemblies)'. Set VEHICLEFRAMEWORK_ASSEMBLIES or subscribe to Vehicle Framework." />
+  </Target>
+</Project>
