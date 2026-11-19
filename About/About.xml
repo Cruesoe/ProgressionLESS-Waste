@@ -20,25 +20,21 @@ For a really good modpack, check out The Progression Modpack on the Steam Worksh
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
-      <modVersion>261119</modVersion>
       <displayName>Harmony</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
     </li>
     <li>
       <packageId>VanillaExpanded.Recycling</packageId>
-      <modVersion>261119</modVersion>
       <displayName>Vanilla Recycling Expanded</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/3155781848</steamWorkshopUrl>
     </li>
     <li>
       <packageId>groovy.visualprogression.framework</packageId>
-      <modVersion>261119</modVersion>
       <displayName>Visual Progression Framework</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/3834891951</steamWorkshopUrl>
     </li>
     <li>
       <packageId>Mehni.PickUpAndHaul</packageId>
-      <modVersion>261119</modVersion>
       <displayName>Pick Up And Haul</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/1279012058</steamWorkshopUrl>
     </li>
