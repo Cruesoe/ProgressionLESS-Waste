@@ -45,11 +45,11 @@ namespace ProgressionWaste
                 totalCleaningWorkDone = 0f;
                 totalCleaningWorkRequired = Filth.def.filth.cleaningWorkToReduceThickness * Filth.thickness;
             };
-            clean.tickAction = delegate
+            clean.tickIntervalAction = delegate(int delta)
             {
                 Filth filth = Filth;
                 float terrainFactor = filth.Position.GetTerrain(filth.Map).GetStatValueAbstract(StatDefOf.CleaningTimeFactor);
-                float speed = pawn.GetStatValue(StatDefOf.CleaningSpeed);
+                float speed = pawn.GetStatValue(StatDefOf.CleaningSpeed) * delta;
                 if (terrainFactor != 0f)
                 {
                     speed /= terrainFactor;

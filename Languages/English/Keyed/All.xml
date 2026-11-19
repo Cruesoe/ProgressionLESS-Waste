@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-	<ProgressionWaste.GenerateTrash>generate trash</ProgressionWaste.GenerateTrash>
-	<ProgressionWaste.GenerateTrashDesc>When off, colonists no longer tally filth or pack it into trash while cleaning.</ProgressionWaste.GenerateTrashDesc>
-	<ProgressionWaste.PackAfter>pack trash after cleaning filth amount</ProgressionWaste.PackAfter>
-	<ProgressionWaste.ModName>Progression: Waste</ProgressionWaste.ModName>
-	<ProgressionWaste.PackingTrash>packing trash</ProgressionWaste.PackingTrash>
-	<ProgressionWaste.CompactTrash>Compact trash</ProgressionWaste.CompactTrash>
-	<ProgressionWaste.CompactTrashDesc>Compact all the trash in the cargo into trash bricks, {0} {1} per {2}.</ProgressionWaste.CompactTrashDesc>
-	<ProgressionWaste.CompactTrashNone>Needs at least {0} {1} in the cargo.</ProgressionWaste.CompactTrashNone>
-	<ProgressionWaste.CompactTrashDone>Compacted trash into {0} {1}.</ProgressionWaste.CompactTrashDone>
+  <ProgressionWaste.GenerateTrash>generate trash</ProgressionWaste.GenerateTrash>
+  <ProgressionWaste.GenerateTrashDesc>When off, colonists no longer tally filth or pack it into trash while cleaning.</ProgressionWaste.GenerateTrashDesc>
+  <ProgressionWaste.PackAfter>pack trash after cleaning filth amount</ProgressionWaste.PackAfter>
+  <ProgressionWaste.PackAfterDisabled>Needs "Generate trash" turned on.</ProgressionWaste.PackAfterDisabled>
+  <ProgressionWaste.ModName>ProgressionLESS: Waste</ProgressionWaste.ModName>
+  <ProgressionWaste.PackingTrash>packing trash</ProgressionWaste.PackingTrash>
+  <ProgressionWaste.CompactTrash>Compact trash</ProgressionWaste.CompactTrash>
+  <ProgressionWaste.CompactTrashDesc>Compact all the trash in the cargo into trash bricks, {0} {1} per {2}.</ProgressionWaste.CompactTrashDesc>
+  <ProgressionWaste.CompactTrashNone>Needs at least {0} {1} in the cargo.</ProgressionWaste.CompactTrashNone>
+  <ProgressionWaste.CompactTrashDone>Compacted trash into {0} {1}.</ProgressionWaste.CompactTrashDone>
 </LanguageData>

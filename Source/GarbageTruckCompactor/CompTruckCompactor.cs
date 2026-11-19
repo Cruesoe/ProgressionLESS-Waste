@@ -6,24 +6,17 @@ using Verse;
 
 namespace GarbageTruckCompactor
 {
-    public class CompProperties_TruckCompactor : VehicleCompProperties
-    {
-        // Same ratio as VE Recycling's garbage compactor: 10 trash -> 5 trash bricks.
-        public int trashPerBrick = 2;
-
-        public CompProperties_TruckCompactor()
-        {
-            compClass = typeof(CompTruckCompactor);
-        }
-    }
-
     /// <summary>Adds a gizmo to the garbage truck that compacts the trash in its cargo into trash bricks.</summary>
     public class CompTruckCompactor : VehicleComp
     {
         private CompProperties_TruckCompactor Props => (CompProperties_TruckCompactor)props;
 
-        private static ThingDef TrashDef => DefDatabase<ThingDef>.GetNamedSilentFail("VRecyclingE_Trash");
-        private static ThingDef BrickDef => DefDatabase<ThingDef>.GetNamedSilentFail("VRecyclingE_TrashBrick");
+        // Looked up on first use; defs don't change during a session.
+        private static ThingDef trashDef;
+        private static ThingDef brickDef;
+
+        private static ThingDef TrashDef => trashDef ??= DefDatabase<ThingDef>.GetNamedSilentFail("VRecyclingE_Trash");
+        private static ThingDef BrickDef => brickDef ??= DefDatabase<ThingDef>.GetNamedSilentFail("VRecyclingE_TrashBrick");
 
         private int TrashInCargo()
         {

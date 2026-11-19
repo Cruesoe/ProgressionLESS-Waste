@@ -1,0 +1,27 @@
+[b]All the Progression goodness, less research.[/b]
+
+[i]This is a fork of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3841676471]Progression: Waste[/url] by ferny. Huge thanks to ferny for the original mod and all the Progression work this builds on. For a really good modpack, check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3521297585]The Progression Modpack[/url].[/i]
+
+[h2]Features[/h2]
+[list]
+[*]Colonists pack the filth they clean into trash, which looks different in each era.
+[*]Trash bins, dumpsters and a garbage truck manage it across the eras.
+[*]With Vanilla Furniture Expanded's waste disposal, its bins become a Medieval trash bin project, after Progression: Storage's barrels or ProgressionLESS: Storage's crates and chests when those exist.
+[/list]
+
+[h2]Why "LESS"?[/h2]
+Progression: Waste adds just [b]1 research project[/b], [b]Dumpsters[/b] (Industrial, with Adaptive Storage Framework and Vanilla Furniture Expanded), and this fork keeps it. It completes the ProgressionLESS set, so any later research changes have a home.
+
+[h2]Compatibility[/h2]
+Needs Harmony, Vanilla Recycling Expanded, Visual Progression Framework and Pick Up And Haul. Supports:
+[list]
+[*]Vanilla Furniture Expanded
+[*]Adaptive Storage Framework
+[*]Vanilla Vehicles Expanded
+[*]Medieval Overhaul
+[*]Reel's Expanded Storage
+[*]ProgressionLESS: Storage and Progression: Storage
+[/list]
+RimWorld 1.7 only, as Visual Progression Framework has no 1.6 version.
+
+[b]Replaces the original. Don't use both.[/b]
