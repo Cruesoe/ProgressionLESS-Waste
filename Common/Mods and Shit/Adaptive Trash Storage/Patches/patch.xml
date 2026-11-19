@@ -1,59 +1,55 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-	<!-- RESEARCH: VFE's waste disposal becomes the medieval "Trash bin" project -->
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/label</xpath>
-		<value>
-			<label>Trash bin</label>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/description</xpath>
-		<value>
-			<description>Learn to build trash bins, small containers that hold trash until it can be hauled away.</description>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/techLevel</xpath>
-		<value>
-			<techLevel>Medieval</techLevel>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/baseCost</xpath>
-		<value>
-			<baseCost>600</baseCost>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/prerequisites</xpath>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]</xpath>
-		<value>
-			<tags>
-				<li>ClassicStart</li>
-			</tags>
-		</value>
-	</Operation>
-
-	<!-- If Progression: Storage's barrels project exists (needs a specific mod combo), trash bins come after barrels -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ResearchProjectDef[defName="Ferny_Barrels"]</xpath>
-		<match Class="PatchOperationAdd">
-			<xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]</xpath>
-			<value>
-				<prerequisites>
-					<li>Ferny_Barrels</li>
-				</prerequisites>
-			</value>
-		</match>
-	</Operation>
-
-	<!-- The old large and small bins are hidden (Defs/HiddenDesignators.xml), so they no longer unlock from research -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="Bin_Large" or defName="Bin_Small"]/researchPrerequisites</xpath>
-	</Operation>
-
+  <!-- RESEARCH: VFE's waste disposal becomes the medieval "Trash bin" project -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/label</xpath>
+    <value>
+      <label>trash bin</label>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/description</xpath>
+    <value>
+      <description>Learn to build trash bins, small containers that hold trash until it can be hauled away.</description>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/techLevel</xpath>
+    <value>
+      <techLevel>Medieval</techLevel>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/baseCost</xpath>
+    <value>
+      <baseCost>600</baseCost>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]/prerequisites</xpath>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]</xpath>
+    <value>
+      <tags>
+        <li>ClassicStart</li>
+      </tags>
+    </value>
+  </Operation>
+  <!-- If Progression: Storage's barrels project exists (needs a specific mod combo), trash bins come after barrels -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="Ferny_Barrels"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ResearchProjectDef[defName="MF_WasteDisposal"]</xpath>
+      <value>
+        <prerequisites>
+          <li>Ferny_Barrels</li>
+        </prerequisites>
+      </value>
+    </match>
+  </Operation>
+  <!-- The old large and small bins are hidden (Defs/HiddenDesignators.xml), so they no longer unlock from research -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Bin_Large" or defName="Bin_Small"]/researchPrerequisites</xpath>
+  </Operation>
 </Patch>

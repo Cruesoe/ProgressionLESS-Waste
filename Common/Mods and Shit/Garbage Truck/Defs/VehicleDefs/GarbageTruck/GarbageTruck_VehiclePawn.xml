@@ -3,7 +3,7 @@
 <Defs>
   <Vehicles.VehicleDef ParentName="VehiclePawn_Mechanical">
     <defName>GT_GarbageTruckVehicle</defName>
-    <label>Garbage Truck</label>
+    <label>garbage truck</label>
     <description>An industrial garbage hauler that can potentially carry an insanely significant amount of cargo. While it cannot hold very much fuel or move very fast in comparison, its function of large-scale transport more than makes up for it.\n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Passenger x1\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 
     <graphicData>
@@ -30,14 +30,14 @@
     <vehicleType>Land</vehicleType>
 
     <statBases>
-      <ArmorRating_Blunt>0.24</ArmorRating_Blunt> <!-- TO ADJUST! -->
-      <ArmorRating_Sharp>0.38</ArmorRating_Sharp> <!-- TO ADJUST! -->
+      <ArmorRating_Blunt>0.24</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.38</ArmorRating_Sharp>
       <ArmorRating_Heat>1.0</ArmorRating_Heat>
       <Flammability>0.5</Flammability>
-      <MarketValue>3050</MarketValue>  <!-- TO ADJUST! -->
+      <MarketValue>3050</MarketValue>
     </statBases>
 
-    <vehicleStats> <!-- TO ADJUST! -->
+    <vehicleStats>
       <Mass>300</Mass>
       <MoveSpeed>10.1</MoveSpeed>
       <CargoCapacity>1000</CargoCapacity>
@@ -58,11 +58,11 @@
     </race>
 
     <properties>
-      <customRoadCosts AssignDefaults = "0.3"/> <!-- TO ADJUST! Bigger number = slower -->
+      <customRoadCosts AssignDefaults = "0.3"/> <!-- Bigger number = slower -->
       <diagonalRotation>true</diagonalRotation>
       <manhunterTargetsVehicle>false</manhunterTargetsVehicle>
-      <worldSpeedMultiplier>1.2</worldSpeedMultiplier> <!-- TO ADJUST! Speed on World Map. Bigger number = slower -->
-      <winterSpeedMultiplier>2.1</winterSpeedMultiplier> <!-- TO ADJUST! Speed on snowy terrain. Bigger number = slower -->
+      <worldSpeedMultiplier>1.2</worldSpeedMultiplier> <!-- Speed on World Map. Bigger number = slower -->
+      <winterSpeedMultiplier>2.1</winterSpeedMultiplier> <!-- Speed on snowy terrain. Bigger number = slower -->
 
       <roles>
         <li>
@@ -610,9 +610,9 @@
       <li Class="Vehicles.CompProperties_FueledTravel">
         <fuelType>Chemfuel</fuelType>
         <leakDef>Filth_Fuel</leakDef>
-        <fuelConsumptionRate>20</fuelConsumptionRate> <!-- TO ADJUST! -->
-        <fuelConsumptionWorldMultiplier>0.5</fuelConsumptionWorldMultiplier> <!-- TO ADJUST! -->
-        <fuelCapacity>80</fuelCapacity> <!-- TO ADJUST! -->
+        <fuelConsumptionRate>20</fuelConsumptionRate>
+        <fuelConsumptionWorldMultiplier>0.5</fuelConsumptionWorldMultiplier>
+        <fuelCapacity>80</fuelCapacity>
       </li>
     </comps>
   </Vehicles.VehicleDef>
